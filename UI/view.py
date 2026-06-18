@@ -45,6 +45,7 @@ class View(ft.UserControl):
         self.btn_path = ft.ElevatedButton(text="Cammino",
                                           tooltip="Trova cammino ottimo",
                                           on_click=self._controller.handle_path)
+        self._controller.fillDDLocalization()
 
         row1 = ft.Row([self.dd_localization, self.btn_graph, self.btn_analizza_grafo, self.btn_path],
                       alignment=ft.MainAxisAlignment.SPACE_EVENLY)
